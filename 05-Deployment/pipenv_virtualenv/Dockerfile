@@ -6,7 +6,7 @@ RUN pip install \
     scikit-learn==1.2.2
 
 WORKDIR /app
-COPY Pipfile Pipfile.lock ./
+COPY Pipfile Pipfile.lock
 COPY predict.py model_C=1.0.bin ./
 
 EXPOSE 9696
